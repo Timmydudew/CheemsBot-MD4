@@ -88,7 +88,7 @@ async function startXeonBotInc() {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
     let xeonfek = await XeonBotInc.sendContact(callerId, global.owner)
-    XeonBotInc.sendMessage(callerId, { text: `Automatic Block System!\nDon't Call Bot!\nPlease Ask Or Contact The Owner To Unblock You!`}, { quoted : xeonfek })
+    XeonBotInc.sendMessage(callerId, { text: `Automatic Block System!\nDon't Call Jarvis!\nPlease Ask Or Contact Timmy To Unblock You!`}, { quoted : xeonfek })
     await sleep(8000)
     await XeonBotInc.updateBlockStatus(callerId, "block")
     }
@@ -121,15 +121,15 @@ async function startXeonBotInc() {
        }
        let lolXeon = { url : ppgc }
        if (pea[0].announce == true) {
-       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages !`, `${botname}`, lolXeon, [])
+       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed by jarvis 」\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages !`, `${botname}`, lolXeon, [])
        } else if(pea[0].announce == false) {
-       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `${botname}`, lolXeon, [])
+       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed by jarvis 」\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `${botname}`, lolXeon, [])
        } else if (pea[0].restrict == true) {
-       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `${botname}`, lolXeon, [])
+       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed by jarvis 」\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `${botname}`, lolXeon, [])
        } else if (pea[0].restrict == false) {
-       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info !`, `${botname}`, lolXeon, [])
+       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed by jarvis」\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info !`, `${botname}`, lolXeon, [])
        } else {
-       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `${botname}`, lolXeon, [])
+       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed by jarvis」\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `${botname}`, lolXeon, [])
      }
     })
     
@@ -143,7 +143,7 @@ let docs = pickRandom(documents)
 
     XeonBotInc.ev.on('group-participants.update', async (anu) => {
         console.log(anu)
-        //if (!wlcm.includes(anu.id)) return //remove forwad slashes to make it welcome on off
+        if (!wlcm.includes(anu.id)) return //remove forwad slashes to make it welcome on off
         try {
             let metadata = await XeonBotInc.groupMetadata(anu.id)
             let participants = anu.participants
@@ -170,26 +170,26 @@ let docs = pickRandom(documents)
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "923474187615-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: buffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 xeonbody = `╭─────────────┈⊷
-│ 「 *WELCOME🌹* 」 ╰┬────────────┈⊷
+│ 「 *WELCOME by jarvis* 」 ╰┬────────────┈⊷
 ┌┤
-││🏮 〔 @${xeonName.split("@")[0]} 
+││🗣️ 〔 @${xeonName.split("@")[0]} 
 ││◦➛
-││🏮  *Wᴇʟᴄᴏᴍᴇ Tᴏ*
+││🗣️  *Welcome *
 ││◦➛
-││🏮  ${metadata.subject}
+││🗣️  ${metadata.subject}
 ││◦➛
-││🏮  *Mᴇᴍʙᴇʀ*
+││🗣️  *Mᴇᴍʙᴇʀ*
 ││◦➛
-││🏮 ${xmembers}th
+││🗣️ ${xmembers}th
 ││◦➛
-││🏮  *Jᴏɪɴᴇᴅ*
+││🗣️  *Jᴏɪɴᴇᴅ*
 ││◦➛
-││🏮  ${xtime} ${xdate}
+││🗣️  ${xtime} ${xdate}
 │╰────────────┈⊷
 ╰═════════════┅┄• ⳹
-╔════⧫ BayMax ⧫ ═══════◉
+╔════⧫ JARVIS ⧫ ═══════◉
 ║
-║ *❖*   +2 6 3 7 8 0 6 9 9 9 8 8
+║ *❖*   +4 4 7 4 4 1 4 6 0 5 3 3
 ╚═══════════════════╝
 └┬═════════════◉
    ║❖ *WELCOME❖*
@@ -235,24 +235,24 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                     xeonbody = `╭─────────────┈⊷
 │ 「 *GOODBYE👋🏻* 」 ╰┬────────────┈⊷
 ┌┤
-││🏮 〔 @${xeonName.split("@")[0]}   〕
+││🗣️ 〔 @${xeonName.split("@")[0]}   〕
 ││◦➛
-││🏮  *Lᴇғᴛ*
+││🗣️  *Lᴇғᴛ*
 ││◦➛
-││🏮  ${metadata.subject}
+││🗣️  ${metadata.subject}
 ││◦➛
-││🏮  *Mᴇᴍʙᴇʀ*
+││🗣️  *Mᴇᴍʙᴇʀ*
 ││◦➛
-││🏮  ${xeonmembers}th
+││🗣️  ${xeonmembers}th
 ││◦➛
-││🏮  *Tɪᴍᴇ*
+││🗣️  *Tɪᴍᴇ*
 ││◦➛
-││🏮  ${xeontime} ${xeondate}
+││🗣️  ${xeontime} ${xeondate}
 │╰────────────┈⊷
 ╰═════════════┅┄• ⳹
-╔════⧫ BayMax ⧫ ═══════◉
+╔════⧫ JARVIS ⧫ ═══════◉
 ║
-║ *❖*   +2 6 3 7 8 0 6 9 9 9 8 8
+║ *❖*   +4 4 7 4 4 1 4 6 0 5 3 3
 ╚═══════════════════╝
 └┬═════════════◉
    ║❖ *Bye Bye ❖*
