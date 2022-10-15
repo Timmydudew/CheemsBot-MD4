@@ -61,16 +61,16 @@ global.socialm = "insta: mr_juice7" //ur github or insta name
 global.location = "Zimbabwe" //ur location
 
 //bot bomdy 
-global.owner = ['263780699988']
-global.ownertag = '263780699988' //ur tag number
-global.botname = 'BayMax Bot V5' //ur bot name
+global.owner = ['447441460533']
+global.ownertag = '447441460533' //ur tag number
+global.botname = 'Jarvis' //ur bot name
 global.linkz = "https://chat.whatsapp.com/C5D6zr2NFQGC1UCAlgFlqY" //your theme url which will be displayed on whatsapp
 global.websitex = "https://chat.whatsapp.com/C5D6zr2NFQGC1UCAlgFlqY" //ur website to be displayed
-global.botscript = 'https://www.instagram.com/mr_juice7' //script link
-global.reactmoji = "🐤" //ur menu react emoji
-global.themeemoji = "🏮" //ur theme emoji
-global.packname = "Made on Earth by the cool guy\n\n\n\n\n\n\n\n\n\n\n Mr Juice" //ur sticker watermark packname
-global.author = "🐤ᴹᴿ᭄ ᴊᴜɪᴄᴇོ ×፝֟͜×⁩" //ur sticker watermark author
+global.botscript = 'https://bio.link/timifres' //script link
+global.reactmoji = "✋" //ur menu react emoji
+global.themeemoji = "🗣️" //ur theme emoji
+global.packname = "Made on Earth by Timmy" //ur sticker watermark packname
+global.author = "🐤ᴹᴿ᭄ Timmy⁩" //ur sticker watermark author
 
 //Bot theme media
 global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
@@ -79,7 +79,7 @@ global.err4r = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur error pic
 global.thumb = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
 
 //damtabase
-global.premium = ['263780699988'] //ur premium numbers
+global.premium = ['447441460533'] //ur premium numbers
 global.ntilinkytvid = []
 global.ntilinkytch = []
 global.ntilinkig = []
@@ -107,7 +107,7 @@ global.sp = '⭔'
 global.mess = {
     success: 'Done ✓',
     admin: 'This Feature Is Only For Admin!',
-    botAdmin: 'BayMax Bot Want to Be Admin First😥!',
+    botAdmin: 'Jarvis Bot Want to Be Admin First😥!',
     owner: 'This Feature Is Only For My Owner Mr Juice!',
     group: 'Feature Used Only For Groups!',
     private: 'Features Used Only For Private Chat!',
@@ -116,7 +116,7 @@ global.mess = {
     linkm: 'Where is the link bro 🙃?',
     error: 'Error!!',
     endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
-    ban: 'You have been banned by the owner, if you want to be unbanned, chat owner Mr Juice.',
+    ban: 'You have been banned by the owner, if you want to be unbanned, chat owner Timmy.',
     nsfw: 'The nsfw feature has not been activated, please contact the admin to activate',
     banChat: 'The bot was banned in this group, please contact the owner to unban'
 }
